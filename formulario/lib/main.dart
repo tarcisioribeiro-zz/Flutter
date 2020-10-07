@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
       title: 'Aplicativo de Formulário',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.deepPurple,
+        primarySwatch: Colors.blueGrey,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: MyHomePage(title: 'Formulário'),
