@@ -11,6 +11,11 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Cadastrando produto'),
         ),
+        body: Column(
+          children: <Widget>[
+            TextField(),
+          ],
+        ),
       ),
     );
   }
