@@ -1,3 +1,4 @@
+import 'dart:ffi';
 import 'dart:io';
 
 main() {
@@ -6,10 +7,13 @@ main() {
   //realizar cálculo
   //retornar imc
 
-  var peso;
-  var altura;
+  var textPeso = stdin.readLineSync();
+  var peso = int.parse(textPeso);
 
-  var calc = peso / (altura * altura);
+  var textAltura = stdin.readLineSync();
+  var altura = double.parse(textAltura);
 
-  print(calc);
+  var calcImc = peso / (altura * altura);
+
+  print(calcImc);
 }
