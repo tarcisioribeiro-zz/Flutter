@@ -9,7 +9,7 @@ calculoDeImc() {
 
   String textPeso = stdin.readLineSync();
   int peso = int.parse(textPeso);
-  
+  print("");
   print("Digite sua altura: ");
   String textAltura = stdin.readLineSync();
   double altura = double.parse(textAltura);
@@ -23,6 +23,7 @@ double calcImc(int peso, double altura) {
 }
 
 imprimirResultado(double imc) {
+  print("");
   if (imc < 18.5) {
     print("Abaixo do peso.");
   } else if (imc > 18.5 && imc < 24.9) {
@@ -36,4 +37,5 @@ imprimirResultado(double imc) {
   } else {
     print("Obesidade grau 3.");
   }
+  print("");
 }
