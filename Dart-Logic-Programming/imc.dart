@@ -1,9 +1,11 @@
 import 'dart:io';
 
+//Método main, primeiro a ser executado
 main() {
   calculoDeImc();
 }
 
+//Método que recebe as variáveis
 calculoDeImc() {
   print("Digite seu peso: ");
 
@@ -18,10 +20,12 @@ calculoDeImc() {
   imprimirResultado(imc);
 }
 
+//Método que realiza o cálculo
 double calcImcExpr(int peso, double altura) {
   return peso / (altura * altura);
 }
 
+//Método que imprime o resultado
 imprimirResultado(double imc) {
   print("");
   if (imc < 18.5) {
