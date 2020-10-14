@@ -14,11 +14,11 @@ calculoDeImc() {
   String textAltura = stdin.readLineSync();
   double altura = double.parse(textAltura);
 
-  double imc = calcImc(peso, altura);
+  double imc = calcImcExpr(peso, altura);
   imprimirResultado(imc);
 }
 
-double calcImc(int peso, double altura) {
+double calcImcExpr(int peso, double altura) {
   return peso / (altura * altura);
 }
 
