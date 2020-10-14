@@ -1,7 +1,10 @@
 import 'dart:io';
 
 main() {
+  calculoDeImc();
+}
 
+calculoDeImc() {
   print("Digite seu peso: ");
 
   var textPeso = stdin.readLineSync();
