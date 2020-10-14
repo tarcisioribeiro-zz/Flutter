@@ -30,7 +30,7 @@ main() {
     print("Obesidade grau 1.");
   } else if (calcImc > 35 && calcImc < 39.9) {
     print("Obesidade grau 2.");
-  } else if (calcImc > 40) {
+  } else {
     print("Obesidade grau 3.");
   }
 }
