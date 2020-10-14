@@ -17,8 +17,10 @@ calculoDeImc() {
 
   var calcImc = peso / (altura * altura);
 
-  print("========================================");
+  imprimirResultado(calcImc);
+}
 
+imprimirResultado(calcImc) {
   if (calcImc < 18.5) {
     print("Abaixo do peso.");
   } else if (calcImc > 18.5 && calcImc < 24.9) {
