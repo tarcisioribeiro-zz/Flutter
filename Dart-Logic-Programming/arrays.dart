@@ -19,10 +19,9 @@ main() {
   // }
 
   var nomes = ["Tarcísio", "Paulo", "João", "Renato"];
-
   nomes.add("Guilherme");
   nomes.add("André");
 
-  print(nomes.length);
-  print(nomes);
+  print(nomes[3]);
+
 }
