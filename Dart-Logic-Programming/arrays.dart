@@ -1,7 +1,7 @@
 import 'dart:io';
 
 main() {
-  String nome;
+  var nome = [];
 
   bool condicao = true;
 
@@ -10,9 +10,11 @@ main() {
     String text = stdin.readLineSync();
     if (text == "sair") {
       print("PROGRAMA FINALIZADO");
+      condicao = false;
     } else {
-      nome = text;
+      nome.add(text);
     }
     print(nome);
+    print("\n");
   }
 }
