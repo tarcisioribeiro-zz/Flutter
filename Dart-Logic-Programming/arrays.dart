@@ -22,6 +22,10 @@ main() {
   nomes.add("Guilherme");
   nomes.add("André");
 
-  print(nomes[3]);
+  print(nomes);
 
+  // nomes.remove("Paulo");
+  nomes.removeAt(1);
+
+  print(nomes);
 }
