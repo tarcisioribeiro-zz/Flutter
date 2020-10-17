@@ -1,4 +1,4 @@
-import 'dart:io';
+// import 'dart:io';
 
 main() {
   // var nome = [];
@@ -18,7 +18,7 @@ main() {
   //   print("\n");
   // }
 
-  var nomes = ["Tarcísio", "Paulo", "João", "Renato"];
+  List<String> nomes = ["Tarcísio", "Paulo", "João", "Renato"];
   nomes.add("Guilherme");
   nomes.add("André");
 
