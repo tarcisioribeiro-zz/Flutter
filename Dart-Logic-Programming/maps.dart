@@ -1,10 +1,23 @@
-main() {
-  Map<String, dynamic> maps = {
-    'nome': 'Tarcísio Ribeiro',
-    'idade': 22,
-    'Cidade': 'São Tomás de Aquino',
-    'Estado': 'Minas Gerais',
-  };
+import 'dart:io';
 
-  print(maps['nome']);
+Map<String, dynamic> cadastro = {};
+
+main() {
+  print('Digite o seu nome: ');
+  String nome = stdin.readLineSync();
+  cadastro['nome'] = nome;
+
+  print('Digite sua idade: ');
+  String idade = stdin.readLineSync();
+  cadastro['idade'] = idade;
+
+  print('Digite sua cidade: ');
+  String cidade = stdin.readLineSync();
+  cadastro['cidade'] = cidade;
+
+  print('Digite seu estado: ');
+  String estado = stdin.readLineSync();
+  cadastro['Estado'] = estado;
+
+  print(cadastro);
 }
