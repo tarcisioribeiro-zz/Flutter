@@ -1,7 +1,8 @@
 import 'dart:io';
 
+List<String> produtos = [];
+
 main() {
-  List<String> produtos = [];
   bool condicao = true;
 
   while (condicao) {
