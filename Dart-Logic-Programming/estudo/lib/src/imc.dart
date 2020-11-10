@@ -1,10 +1,5 @@
 import 'dart:io';
 
-//Método main, primeiro a ser executado
-main() {
-  calculoDeImc();
-}
-
 //Método que recebe as variáveis
 calculoDeImc() {
   print("Digite seu peso: ");

@@ -2,7 +2,7 @@ import 'dart:io';
 
 List<Map<String, dynamic>> cadastros = [];
 
-main() {
+cadastrarPessoa() {
   bool condicao = true;
   print('\x1B[2J\x1B[0;0H');
   while (condicao) {
