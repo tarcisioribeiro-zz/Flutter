@@ -2,12 +2,15 @@ import 'dart:io';
 
 List<String> produtos = [];
 
+// ignore: always_declare_return_types
 carrinhoCompras() {
-  bool condicao = true;
+  bool condicao;
+  condicao = true;
 
   while (condicao) {
     print('Adicone um produto: ');
-    String text = stdin.readLineSync();
+    String text;
+    text = stdin.readLineSync();
     if (text == 'sair') {
       print('=== Terminou o programa ===');
       condicao = false;
@@ -22,16 +25,19 @@ carrinhoCompras() {
   }
 }
 
+// ignore: always_declare_return_types
 imprimir() {
   for (var i = 0; i < produtos.length; i++) {
     print('Item $i - ${produtos[i]}');
   }
 }
 
+// ignore: always_declare_return_types
 remover() {
   print('Qual item deseja remover?');
   imprimir();
-  int item = int.parse(stdin.readLineSync());
+  int item;
+  item = int.parse(stdin.readLineSync());
   produtos.removeAt(item);
   print('Item removido.');
 }

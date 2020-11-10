@@ -1,5 +1,6 @@
 import 'dart:io';
 
+// ignore: always_declare_return_types
 calculoIdade() {
   print('Digite sua idade: ');
   var input = stdin.readLineSync();

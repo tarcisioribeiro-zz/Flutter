@@ -11,7 +11,7 @@ void main(List<String> arguments) {
   } else if (arguments[0] == 'imc') {
     calculoDeImc();
   } else if (arguments[0] == 'cadastro') {
-    cadastrarPessoa();
+    cadastrarPessoas();
   } else {
     print('Esse programa não existe.');
   }

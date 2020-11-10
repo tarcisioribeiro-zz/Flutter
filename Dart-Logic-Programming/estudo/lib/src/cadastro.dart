@@ -2,12 +2,15 @@ import 'dart:io';
 
 List<Map<String, dynamic>> cadastros = [];
 
-cadastrarPessoa() {
-  bool condicao = true;
+// ignore: always_declare_return_types
+cadastrarPessoas() {
+  bool condicao;
+  condicao = true;
   print('\x1B[2J\x1B[0;0H');
   while (condicao) {
     print('Digite um comando: [sair, cadastro, imprimir] ');
-    String comando = stdin.readLineSync();
+    String comando;
+    comando = stdin.readLineSync();
     if (comando == 'sair') {
       print('Programa finalizado.');
       condicao = false;
@@ -22,8 +25,10 @@ cadastrarPessoa() {
   }
 }
 
+// ignore: always_declare_return_types
 cadastrar() {
-  Map<String, dynamic> cadastro = {};
+  Map<String, dynamic> cadastro;
+  cadastro = {};
 
   print('Digite o seu nome: ');
   cadastro['nome'] = stdin.readLineSync();
