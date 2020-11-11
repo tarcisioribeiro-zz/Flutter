@@ -4,16 +4,7 @@ class Pessoa {
   double altura;
   double peso;
 
-  double imc() {
-    double imc = peso / (altura * altura);
-    return imc;
-  }
+  double imc() => peso / (altura * altura);
 
-  bool maiorDeIdade() {
-    if (idade >= 18) {
-      return true;
-    } else {
-      return false;
-    }
-  }
+  bool maiorDeIdade() => idade >= 18;
 }
