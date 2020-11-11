@@ -1,13 +1,16 @@
-import 'package:objetos/src/cachorro.dart';
-import 'package:objetos/src/cavalo.dart';
+import 'dart:io';
 
-import 'src/gato.dart';
+import 'package:objetos/src/pessoa.dart';
+
+Pessoa pessoa = Pessoa();
 
 void main(List<String> arguments) {
-  Gato gato = Gato(nome: 'George', barulho: 'Miau');
-  Cachorro cachorro = Cachorro(nome: 'Espeto', barulho: 'Auau');
-  Cavalo cavalo = Cavalo(nome: 'Panguão', barulho: 'Inherenenen');
-  print('Gato faz: ${gato.barulho}');
-  print('Cachorro faz: ${cachorro.barulho}');
-  print('Cavalo faz: ${cavalo.barulho}');
+  print('Escreva seu nome: ');
+  pessoa.nome = stdin.readLineSync();
+  print('Escreva sua idade: ');
+  pessoa.idade = int.parse(stdin.readLineSync());
+  print('Escreva seu peso: ');
+  pessoa.peso = double.parse(stdin.readLineSync());
+  print('Escreva sua altura: ');
+  pessoa.altura = double.parse(stdin.readLineSync());
 }
