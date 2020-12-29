@@ -64,7 +64,7 @@ flutter:
   fonts:
     - family: BigShouldersDisplay-Light
       fonts:
-        - asset: fonts/BigShouldersDisplay-Light.ttf
+        - asset: assets/fonts/BigShouldersDisplay-Light.ttf
         # - asset: fonts/Schyler-Italic.ttf
         #   style: italic
   #   - family: Trajan Pro
