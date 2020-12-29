@@ -20,7 +20,7 @@ class Input extends StatelessWidget {
           child: Text(
             label,
             style: TextStyle(
-              color: Colors.white,
+              color: Colors.yellow,
               fontSize: 35,
               fontFamily: "Big Shoulders Display",
             ),
