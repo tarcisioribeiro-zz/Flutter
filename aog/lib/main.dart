@@ -1,4 +1,5 @@
 import 'package:aog/widgets/input.widget.dart';
+import 'package:aog/widgets/loading-button.widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_masked_text/flutter_masked_text.dart';
 import 'widgets/logo.widget.dart';
@@ -55,27 +56,11 @@ class HomePage extends StatelessWidget {
                 SizedBox(
                   height: 20,
                 ),
-                Container(
-                  height: 60,
-                  width: double.infinity,
-                  margin: EdgeInsets.all(30),
-                  decoration: BoxDecoration(
-                      color: Colors.white.withOpacity(0.8),
-                      borderRadius: BorderRadius.circular(
-                        60,
-                      )),
-                  child: FlatButton(
-                    child: Text(
-                      "Calcular Novamente",
-                      style: TextStyle(
-                        color: Theme.of(context).primaryColor,
-                        fontSize: 25,
-                        fontFamily: "Big Shoulders Display",
-                      ),
-                    ),
-                    onPressed: () {},
-                  ),
-                ),
+                LoadingButton(
+                    busy: false,
+                    func: () {},
+                    text: "Calcular Novamente",
+                    invert: true),
               ],
             ),
           ),
@@ -87,27 +72,11 @@ class HomePage extends StatelessWidget {
             ctrl: _alcCtrl,
             label: "Álcool",
           ),
-          Container(
-            height: 60,
-            margin: EdgeInsets.all(30),
-            decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.8),
-              borderRadius: BorderRadius.circular(
-                60,
-              ),
-            ),
-            child: FlatButton(
-              child: Text(
-                "Calcular",
-                style: TextStyle(
-                  color: Theme.of(context).primaryColor,
-                  fontSize: 25,
-                  fontFamily: "Big Shoulders Display",
-                ),
-              ),
-              onPressed: () {},
-            ),
-          ),
+          LoadingButton(
+              busy: true,
+              func: () {},
+              text: "Calcular",
+              invert: false),
         ],
       ),
     );
